@@ -1,0 +1,65 @@
+{
+  "version": 4,
+  "terraform_version": "1.2.2",
+  "serial": 7,
+  "lineage": "0a11830f-e9f4-5050-19cf-9172cdd9dbc7",
+  "outputs": {},
+  "resources": [
+    {
+      "mode": "managed",
+      "type": "random_pet",
+      "name": "pet",
+      "provider": "provider[\"registry.terraform.io/hashicorp/random\"]",
+      "instances": [
+        {
+          "index_key": 0,
+          "schema_version": 0,
+          "attributes": {
+            "id": "inspired-jawfish",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 1,
+          "schema_version": 0,
+          "attributes": {
+            "id": "sound-beetle",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 2,
+          "schema_version": 0,
+          "attributes": {
+            "id": "saving-manatee",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        },
+        {
+          "index_key": 3,
+          "schema_version": 0,
+          "attributes": {
+            "id": "known-katydid",
+            "keepers": null,
+            "length": 2,
+            "prefix": null,
+            "separator": "-"
+          },
+          "sensitive_attributes": []
+        }
+      ]
+    }
+  ]
+}
