@@ -1,18 +1,20 @@
-#terraform {
-#  required_providers {
-#    aws = {
-#      source  = "hashicorp/aws"
-#      version = "~> 4.0"
-#    }
-#  }
-#}
-
-provider "aws" {
-  version = "~> 4.0"
-  region  = "us-east-1"
-  access_key = "AWS_ACCESS_KEY_ID"
-  secret_key = "AWS_ACCESS_KEY_KEY"
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 4.0"
+        access_key = "AWS_ACCESS_KEY_ID"
+        secret_key = "AWS_ACCESS_KEY_KEY"
+    }
+  }
 }
+
+#provider "aws" {
+ # version = "~> 4.0"
+ # region  = "us-east-1"
+ # access_key = "AWS_ACCESS_KEY_ID"
+ # secret_key = "AWS_ACCESS_KEY_KEY"
+#}
 
 #terraform {
  # backend "s3" {
