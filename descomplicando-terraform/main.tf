@@ -11,8 +11,8 @@
 provider "aws" {
   region  = "us-east-1"
   version = "~> 4.0"
-#  access_key = "AWS_ACCESS_KEY_ID"
-#  secret_key = "AWS_ACCESS_KEY_KEY"
+  access_key = "AWS_ACCESS_KEY_ID"
+  secret_key = "AWS_ACCESS_KEY_KEY"
 }
 
 #terraform {
