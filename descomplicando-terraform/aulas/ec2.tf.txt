@@ -10,10 +10,11 @@ data "aws_ami" "ubuntu" {
 
 resource "aws_instance" "web" {
   ami           = data.aws_ami.ubuntu.id
-  for_each      = toset(var.instance_type)
-  instance_type = each.value
+  instance_type = var.instance_type
+
 
   tags = {
-    Name = "HelloWorld"
-    }
-}
+    Name = var.name
+    #Name = "Hello, %{ if var.name == "rafael" }${var.name}%{else }não valeu%{ endif }!"
+  }
+} 
