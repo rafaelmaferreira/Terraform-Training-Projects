@@ -1,3 +1,0 @@
-variable "prefixo_arquivo" {
-  
-}

@@ -1,0 +1,26 @@
+variable "image_id" {
+  default     = "ami-0c65adc9a5c1b5d7c"
+  type        = string
+  description = "The AMI to use for the EC2 instance"
+}
+
+variable "environment" {
+  type = string
+  default ="staging"
+  description = "the environment of instance"
+}
+
+variable "blocks" {
+    type = list(object({
+    device_name = string
+    volume_size = string
+    volume_type = string
+  }))
+  description = "list of ebs instance"
+}
+
+# variable "instance_type" {
+#   type = list(string)
+#   default = ["t2.micro","t3.medium"]
+#   description = "size of vms"
+# }
